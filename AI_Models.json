@@ -1,0 +1,195 @@
+{
+    "schemaVersion":  1,
+    "updated":  "2026-11-23",
+    "status":  "ACTIVE - SEED list. Loaded by 04_A.I.Sending.ps1 (file name set in 01_Configuration.ps1: $AiModelsFileName). The agent keeps the real list up to date AUTOMATICALLY: it refreshes against Google\u0027s ListModels, removes models that disappear, and ADDS new models by itself after acceptance tests (see AGENT_RULES.md, Rule 15). Everything it learns at run time (adopted/removed/rejected models, aliases, weekly failure counts) lives in ai_model_state.json in the agent data folder, not in this file. You only edit this file to change a tier or to seed a model by hand.",
+    "source":  "https://ai.google.dev/gemini-api/docs/deprecations (Google, last updated 2026-10-09 UTC) and https://ai.google.dev/gemini-api/docs/models",
+    "howToRead":  {
+                      "tier":  "1 = normal. 2 = lower capability by definition (the -lite class); tier-2 models are tried only after all tier-1 models. Within a tier the order is decided by the failure rate of the last 7 days (Laplace-smoothed), then by the order of this file. The age or novelty of a model is never a reason to exclude it.",
+                      "api":  "generateContent = the endpoint the agent already uses (same request body for every entry). interactions = Interactions API (managed agents) - a different endpoint, NOT usable by the current code.",
+                      "quota":  "Google counts the free-tier daily request quota PER MODEL per project (seen in the real 429: GenerateRequestsPerDayPerProjectPerModel-FreeTier, limit 20) - every extra model in the list is an extra daily budget."
+                  },
+    "reportModels":  [
+                         {
+                             "id":  "gemini-3.8-flash",
+                             "tier":  1,
+                             "api":  "generateContent",
+                             "status":  "stable",
+                             "released":  "2026-09-02",
+                             "notes":  "Latest Flash model. Google recommends it for new projects. Gemini 3.7 Flash requests are routed to it."
+                         },
+                         {
+                             "id":  "gemini-3.6-flash",
+                             "tier":  1,
+                             "api":  "generateContent",
+                             "status":  "stable",
+                             "released":  "2026-07-21",
+                             "notes":  "The model hard-coded in 01_Configuration.ps1 today ($GEMINI_MODEL). Gemini 3.5 Flash requests are routed to it."
+                         },
+                         {
+                             "id":  "gemini-3.5-flash-lite",
+                             "tier":  2,
+                             "api":  "generateContent",
+                             "status":  "stable",
+                             "released":  "2026-07-21",
+                             "notes":  "Lite model: cheaper and faster but lower quality. Last resort only."
+                         },
+                         {
+                             "id":  "gemini-3.1-pro-preview",
+                             "tier":  2,
+                             "api":  "generateContent",
+                             "status":  "preview",
+                             "released":  "2026-02-19",
+                             "notes":  "Larger model in preview (can change or be retired without much notice). Free-tier availability and speed NOT verified."
+                         },
+                         {
+                             "id":  "gemini-4-hydrogen",
+                             "tier":  1,
+                             "api":  "generateContent",
+                             "status":  "auto-adopted",
+                             "released":  "",
+                             "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                         },
+                         {
+                             "id":  "gemini-3.1-flash-lite",
+                             "tier":  2,
+                             "api":  "generateContent",
+                             "status":  "auto-adopted",
+                             "released":  "",
+                             "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                         },
+                         {
+                             "id":  "gemini-3.1-flash-lite-preview",
+                             "tier":  2,
+                             "api":  "generateContent",
+                             "status":  "auto-adopted",
+                             "released":  "",
+                             "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                         },
+                         {
+                             "id":  "gemini-3-flash-preview",
+                             "tier":  1,
+                             "api":  "generateContent",
+                             "status":  "auto-adopted",
+                             "released":  "",
+                             "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                         }
+                     ],
+    "agentModels":  [
+                        {
+                            "id":  "gemini-3.8-flash",
+                            "api":  "generateContent",
+                            "status":  "stable",
+                            "role":  "Local auto-remediation through function calling: the model only PROPOSES a call from a whitelist, PowerShell executes it on the machine and returns the result.",
+                            "notes":  "Normal model + tools. This is the only kind of agent that can act on the Windows machine itself."
+                        },
+                        {
+                            "id":  "gemini-3.6-flash",
+                            "api":  "generateContent",
+                            "status":  "stable",
+                            "role":  "Same as above (fallback)."
+                        },
+                        {
+                            "id":  "antigravity-preview-09-2026",
+                            "api":  "interactions",
+                            "status":  "preview",
+                            "released":  "2026-09-17",
+                            "role":  "Managed agent that plans, writes and runs code inside a Linux sandbox HOSTED BY GOOGLE.",
+                            "notes":  "It cannot reach or repair the local Windows machine (it works in Google\u0027s sandbox). Could be useful for analysis tasks, not for local fixes. Needs the Interactions API (not generateContent)."
+                        },
+                        {
+                            "id":  "gemini-4-hydrogen",
+                            "tier":  1,
+                            "api":  "generateContent",
+                            "status":  "auto-adopted",
+                            "released":  "",
+                            "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                        },
+                        {
+                            "id":  "gemini-3.1-flash-lite",
+                            "tier":  2,
+                            "api":  "generateContent",
+                            "status":  "auto-adopted",
+                            "released":  "",
+                            "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                        },
+                        {
+                            "id":  "gemini-3.1-flash-lite-preview",
+                            "tier":  2,
+                            "api":  "generateContent",
+                            "status":  "auto-adopted",
+                            "released":  "",
+                            "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                        },
+                        {
+                            "id":  "gemini-3-flash-preview",
+                            "tier":  1,
+                            "api":  "generateContent",
+                            "status":  "auto-adopted",
+                            "released":  "",
+                            "notes":  "Προστέθηκε από το Update-AiModelsSeed στις 2026-11-22 μετά από επιτυχείς δοκιμές αποδοχής."
+                        }
+                    ],
+    "excluded":  [
+                     {
+                         "group":  "Audio models",
+                         "examples":  "gemini-3.5-transcribe, gemini-3.8-flash-tts, gemini-3.8-flash-lite-tts, gemini-3.8-live, gemini-3.5-transcribe-live",
+                         "reason":  "excluded by decision"
+                     },
+                     {
+                         "group":  "Generative media models",
+                         "examples":  "gemini-nano-banana-2.1, gemini-3.1-flash-image, gemini-3-pro-image, veo-*, gemini-omni-1.1-flash, imagen-*",
+                         "reason":  "excluded by decision"
+                     },
+                     {
+                         "group":  "Music generation models",
+                         "examples":  "lyria-3.5, lyria-3-clip-preview, lyria-realtime-exp",
+                         "reason":  "excluded by decision"
+                     },
+                     {
+                         "group":  "Specialized task models",
+                         "examples":  "gemini-embedding-2, gemini-robotics-er-*, deep-research-*, computer-use models",
+                         "reason":  "excluded by decision"
+                     },
+                     {
+                         "id":  "gemini-2.5-flash / gemini-2.5-flash-lite / gemini-2.5-pro",
+                         "reason":  "Google limits access to the 2.5 family to users who already used it; not available for new use."
+                     },
+                     {
+                         "id":  "gemini-3.1-flash-lite",
+                         "reason":  "Shutdown announced for 2027-05-07; replaced by gemini-3.5-flash-lite (already listed)."
+                     },
+                     {
+                         "id":  "gemini-3-flash-preview",
+                         "reason":  "Replaced by gemini-3.6-flash."
+                     }
+                 ],
+    "removed":  [
+                    {
+                        "id":  "gemini-3.7-flash",
+                        "date":  "2026-10-08",
+                        "reason":  "Google routes requests to gemini-3.8-flash (deprecations page); no point keeping both."
+                    },
+                    {
+                        "id":  "gemini-3.5-flash",
+                        "date":  "2026-10-08",
+                        "reason":  "Google routes requests to gemini-3.6-flash."
+                    }
+                ],
+    "policy":  {
+                   "failoverOn":  [
+                                      "HTTP 503",
+                                      "HTTP 500",
+                                      "HTTP 504",
+                                      "timeout / no HTTP response",
+                                      "HTTP 429 for that model (its own quota) - the next model has its own quota"
+                                  ],
+                   "neverFailoverOn":  [
+                                           "HTTP 400 (our request is wrong - would fail on every model)",
+                                           "HTTP 401/403 (key problem)"
+                                       ],
+                   "weeklyStats":  "per model: ok / 503 (5xx, timeout, no answer) / 429 / 404 / other for each of the last 8 days (ai_model_state.json). 429 (key quota) is not counted as a model failure.",
+                   "autoRemove":  "a model missing from the Gemini ListModels answer on 2 consecutive daily syncs (at least 12 hours apart) is moved to \u0027removed\u0027; a failed sync never removes anything; HTTP 404 on use counts as one confirmation",
+                   "newModels":  "Models that appear in ListModels are ADDED AUTOMATICALLY after passing: type filter (no audio/media/music/specialized), token limits + generateContent, a small real request (Greek text for reportModels; function calling for agentModels) and alias detection (a reply that names a different modelVersion means the model is only an alias and is not added). New models start with no history and never outrank a proven model.",
+                   "override":  "01_Configuration.ps1: $AiModelOverride (empty = automatic). A non-empty id is always tried first."
+               }
+}
