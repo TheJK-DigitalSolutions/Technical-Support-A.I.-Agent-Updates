@@ -1,6 +1,6 @@
 {
     "schemaVersion":  1,
-    "updated":  "2026-11-23",
+    "updated":  "2026-11-25",
     "status":  "ACTIVE - SEED list. Loaded by 04_A.I.Sending.ps1 (file name set in 01_Configuration.ps1: $AiModelsFileName). The agent keeps the real list up to date AUTOMATICALLY: it refreshes against Google\u0027s ListModels, removes models that disappear, and ADDS new models by itself after acceptance tests (see AGENT_RULES.md, Rule 15). Everything it learns at run time (adopted/removed/rejected models, aliases, weekly failure counts) lives in ai_model_state.json in the agent data folder, not in this file. You only edit this file to change a tier or to seed a model by hand.",
     "source":  "https://ai.google.dev/gemini-api/docs/deprecations (Google, last updated 2026-10-09 UTC) and https://ai.google.dev/gemini-api/docs/models",
     "howToRead":  {
