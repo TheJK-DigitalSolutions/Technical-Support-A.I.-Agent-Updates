@@ -1,23 +1,138 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-26",
   "note": "Ημερομηνίες λήξης ΑΠΟΘΗΚΕΥΣΗΣ ΑΝΑΝΕΩΣΕΩΝ ΑΣΦΑΛΕΙΑΣ (UTC, μορφή yyyy-MM-dd) ανά build. Client: end = Home/Pro, endEntEdu = Enterprise/Education. Server: end = τέλος Extended Support. esuEnd = λήξη καταναλωτικού ESU (Windows 10). Εκδόσεις LTSC/IoT δεν ελέγχονται (έχουν δικό τους κύκλο). Ελέγχεται με τον Κανόνα 11: η λήξη υποστήριξης είναι ⚠️ (λανθάνων κίνδυνος, όχι ενεργή βλάβη), ≤90 ημέρες πριν τη λήξη ℹ️.",
   "sources": [
+    "https://endoflife.date/api/v1 (αυτόματη ανανέωση end/endEntEdu μέσω του πεδίου eol κάθε εγγραφής, Κανόνας 21)",
     "https://learn.microsoft.com/lifecycle/products/windows-server-2016",
     "https://learn.microsoft.com/en-us/answers/a/1973922",
     "https://allthings.how/windows-11-support-end-dates-home-pro-enterprise-and-more/",
     "https://learn.microsoft.com/en-US/lifecycle/announcements/windows-10-22h2-end-of-support-update"
   ],
   "entries": [
-    { "kind": "client", "build": 19044, "name": "Windows 10 21H2", "end": "2025-10-14", "endEntEdu": "2025-10-14" },
-    { "kind": "client", "build": 19045, "name": "Windows 10 22H2", "end": "2025-10-14", "endEntEdu": "2025-10-14", "esuEnd": "2027-10-12" },
-    { "kind": "client", "build": 22000, "name": "Windows 11 21H2", "end": "2023-10-10", "endEntEdu": "2024-10-08" },
-    { "kind": "client", "build": 22621, "name": "Windows 11 22H2", "end": "2024-10-08", "endEntEdu": "2025-10-14" },
-    { "kind": "client", "build": 22631, "name": "Windows 11 23H2", "end": "2025-11-11", "endEntEdu": "2026-11-10" },
-    { "kind": "client", "build": 26100, "name": "Windows 11 24H2", "end": "2026-10-13", "endEntEdu": "2027-10-12" },
-    { "kind": "client", "build": 26200, "name": "Windows 11 25H2", "end": "2027-10-12", "endEntEdu": "2028-10-10" },
-    { "kind": "server", "build": 14393, "name": "Windows Server 2016", "end": "2027-01-12" },
-    { "kind": "server", "build": 17763, "name": "Windows Server 2019", "end": "2029-01-09" },
-    { "kind": "server", "build": 20348, "name": "Windows Server 2022", "end": "2031-10-14" },
-    { "kind": "server", "build": 26100, "name": "Windows Server 2025", "end": "2034-11-12" }
+    {
+      "kind": "client",
+      "build": 19044,
+      "name": "Windows 10 21H2",
+      "end": "2023-06-13",
+      "endEntEdu": "2024-06-11",
+      "eol": {
+        "product": "windows",
+        "w": "10-21h2-w",
+        "e": "10-21h2-e"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 19045,
+      "name": "Windows 10 22H2",
+      "end": "2025-10-14",
+      "endEntEdu": "2025-10-14",
+      "esuEnd": "2027-10-12",
+      "eol": {
+        "product": "windows",
+        "w": "10-22h2",
+        "e": "10-22h2"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 22000,
+      "name": "Windows 11 21H2",
+      "end": "2023-10-10",
+      "endEntEdu": "2024-10-08",
+      "eol": {
+        "product": "windows",
+        "w": "11-21h2-w",
+        "e": "11-21h2-e"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 22621,
+      "name": "Windows 11 22H2",
+      "end": "2024-10-08",
+      "endEntEdu": "2025-10-14",
+      "eol": {
+        "product": "windows",
+        "w": "11-22h2-w",
+        "e": "11-22h2-e"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 22631,
+      "name": "Windows 11 23H2",
+      "end": "2025-11-11",
+      "endEntEdu": "2026-11-10",
+      "eol": {
+        "product": "windows",
+        "w": "11-23h2-w",
+        "e": "11-23h2-e"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 26100,
+      "name": "Windows 11 24H2",
+      "end": "2026-10-13",
+      "endEntEdu": "2027-10-12",
+      "eol": {
+        "product": "windows",
+        "w": "11-24h2-w",
+        "e": "11-24h2-e"
+      }
+    },
+    {
+      "kind": "client",
+      "build": 26200,
+      "name": "Windows 11 25H2",
+      "end": "2027-10-12",
+      "endEntEdu": "2028-10-10",
+      "eol": {
+        "product": "windows",
+        "w": "11-25h2-w",
+        "e": "11-25h2-e"
+      }
+    },
+    {
+      "kind": "server",
+      "build": 14393,
+      "name": "Windows Server 2016",
+      "end": "2027-01-12",
+      "eol": {
+        "product": "windows-server",
+        "cycle": "2016"
+      }
+    },
+    {
+      "kind": "server",
+      "build": 17763,
+      "name": "Windows Server 2019",
+      "end": "2029-01-09",
+      "eol": {
+        "product": "windows-server",
+        "cycle": "2019"
+      }
+    },
+    {
+      "kind": "server",
+      "build": 20348,
+      "name": "Windows Server 2022",
+      "end": "2031-10-14",
+      "eol": {
+        "product": "windows-server",
+        "cycle": "2022"
+      }
+    },
+    {
+      "kind": "server",
+      "build": 26100,
+      "name": "Windows Server 2025",
+      "end": "2034-11-14",
+      "eol": {
+        "product": "windows-server",
+        "cycle": "2025"
+      }
+    }
   ]
 }

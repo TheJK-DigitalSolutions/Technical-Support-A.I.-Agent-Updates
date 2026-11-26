@@ -1,0 +1,1914 @@
+{
+  "schema": 1,
+  "updated": "2026-11-26",
+  "note": "Κατάλογος λογισμικού (Κανόνας 17/21). Ένα ΚΟΙΝΟ αρχείο για ιδιώτες και επιχειρήσεις: μόνο εγγραφές δωρεάν και για επιχειρήσεις. Η ΛΙΣΤΑ εγγραφών είναι seed που εγκρίνεται σε κάθε έκδοση· τα στοιχεία (URL, άδεια, ενεργό project, λήξη υποστήριξης, υπογραφή installers) ανανεώνονται αυτόματα από το workflow catalogs.yml. Εγγραφή με suspended:true παραλείπεται από τον agent.",
+  "categories": [
+    {
+      "id": "office",
+      "exposure": "high",
+      "replaces": [
+        "Microsoft Office",
+        "Microsoft 365",
+        "WPS Office",
+        "OpenOffice",
+        "LibreOffice",
+        "ONLYOFFICE",
+        "Kingsoft Office"
+      ]
+    },
+    {
+      "id": "image_edit",
+      "exposure": "low",
+      "replaces": [
+        "Photoshop",
+        "PaintShop",
+        "Affinity Photo",
+        "Paint\\.NET",
+        "GIMP",
+        "Krita",
+        "Corel Photo"
+      ]
+    },
+    {
+      "id": "vector",
+      "exposure": "low",
+      "replaces": [
+        "CorelDRAW",
+        "Illustrator",
+        "Inkscape",
+        "Affinity Designer"
+      ]
+    },
+    {
+      "id": "video_edit",
+      "exposure": "low",
+      "replaces": [
+        "Premiere",
+        "Camtasia",
+        "Filmora",
+        "Movavi",
+        "VEGAS",
+        "PowerDirector",
+        "Movie Maker",
+        "DaVinci",
+        "Kdenlive",
+        "Shotcut",
+        "OpenShot"
+      ]
+    },
+    {
+      "id": "pdf",
+      "exposure": "high",
+      "replaces": [
+        "Adobe Acrobat",
+        "Acrobat Reader",
+        "Foxit",
+        "Nitro",
+        "PDF-XChange",
+        "Sumatra",
+        "PDFsam"
+      ]
+    },
+    {
+      "id": "archiver",
+      "exposure": "high",
+      "replaces": [
+        "WinRAR",
+        "WinZip",
+        "7-Zip",
+        "PeaZip",
+        "Bandizip",
+        "NanaZip"
+      ]
+    },
+    {
+      "id": "browser",
+      "exposure": "high",
+      "replaces": [
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Brave",
+        "Vivaldi",
+        "Mozilla Firefox",
+        "Internet Explorer",
+        "Waterfox",
+        "Maxthon",
+        "Yandex",
+        "LibreWolf"
+      ]
+    },
+    {
+      "id": "mail",
+      "exposure": "high",
+      "replaces": [
+        "Thunderbird",
+        "Outlook",
+        "eM Client",
+        "Mailbird",
+        "Windows Live Mail",
+        "Foxmail",
+        "Postbox",
+        "The Bat"
+      ]
+    },
+    {
+      "id": "media_player",
+      "exposure": "low",
+      "replaces": [
+        "VLC",
+        "KMPlayer",
+        "PotPlayer",
+        "GOM Player",
+        "Media Player Classic",
+        "AIMP",
+        "Winamp",
+        "RealPlayer",
+        "QuickTime",
+        "mpv",
+        "MPC-BE"
+      ]
+    },
+    {
+      "id": "audio_edit",
+      "exposure": "low",
+      "replaces": [
+        "Audacity",
+        "Audition",
+        "WavePad",
+        "GoldWave",
+        "Sound Forge",
+        "Tenacity"
+      ]
+    },
+    {
+      "id": "screen_record",
+      "exposure": "low",
+      "replaces": [
+        "OBS Studio",
+        "Bandicam",
+        "Snagit",
+        "ScreenToGif",
+        "ShareX"
+      ]
+    },
+    {
+      "id": "text_editor",
+      "exposure": "low",
+      "replaces": [
+        "Notepad\\+\\+",
+        "Sublime Text",
+        "UltraEdit",
+        "EditPlus",
+        "Visual Studio Code",
+        "VSCodium",
+        "Atom"
+      ]
+    },
+    {
+      "id": "password_mgr",
+      "exposure": "high",
+      "replaces": [
+        "KeePass",
+        "Bitwarden",
+        "LastPass",
+        "1Password",
+        "Dashlane",
+        "RoboForm"
+      ]
+    },
+    {
+      "id": "cad",
+      "exposure": "low",
+      "replaces": [
+        "AutoCAD",
+        "FreeCAD",
+        "LibreCAD",
+        "DraftSight",
+        "BricsCAD",
+        "QCAD",
+        "SketchUp",
+        "SolidWorks"
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "alt-libreoffice",
+      "category": "office",
+      "name": "LibreOffice",
+      "url": "https://www.libreoffice.org/download/download-libreoffice/",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-onlyoffice",
+      "category": "office",
+      "name": "ONLYOFFICE Desktop Editors",
+      "url": "https://www.onlyoffice.com/download-desktop.aspx",
+      "license": "AGPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "ONLYOFFICE/DesktopEditors"
+      }
+    },
+    {
+      "id": "alt-gimp",
+      "category": "image_edit",
+      "name": "GIMP",
+      "url": "https://www.gimp.org/downloads/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-krita",
+      "category": "image_edit",
+      "name": "Krita",
+      "url": "https://krita.org/en/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-inkscape",
+      "category": "vector",
+      "name": "Inkscape",
+      "url": "https://inkscape.org/release/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-kdenlive",
+      "category": "video_edit",
+      "name": "Kdenlive",
+      "url": "https://kdenlive.org/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-shotcut",
+      "category": "video_edit",
+      "name": "Shotcut",
+      "url": "https://shotcut.org/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "mltframework/shotcut"
+      }
+    },
+    {
+      "id": "alt-openshot",
+      "category": "video_edit",
+      "name": "OpenShot Video Editor",
+      "url": "https://www.openshot.org/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "OpenShot/openshot-qt"
+      }
+    },
+    {
+      "id": "alt-sumatrapdf",
+      "category": "pdf",
+      "name": "SumatraPDF",
+      "url": "https://www.sumatrapdfreader.org/download-free-pdf-viewer",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "sumatrapdfreader/sumatrapdf"
+      }
+    },
+    {
+      "id": "alt-pdfsam",
+      "category": "pdf",
+      "name": "PDFsam Basic",
+      "url": "https://pdfsam.org/download-pdfsam-basic/",
+      "license": "AGPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "torakiki/pdfsam"
+      }
+    },
+    {
+      "id": "alt-7zip",
+      "category": "archiver",
+      "name": "7-Zip",
+      "url": "https://www.7-zip.org/download.html",
+      "license": "LGPL-2.1",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-peazip",
+      "category": "archiver",
+      "name": "PeaZip",
+      "url": "https://peazip.github.io/",
+      "license": "LGPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "peazip/PeaZip"
+      }
+    },
+    {
+      "id": "alt-nanazip",
+      "category": "archiver",
+      "name": "NanaZip",
+      "url": "https://github.com/M2Team/NanaZip",
+      "license": "MIT",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "M2Team/NanaZip"
+      }
+    },
+    {
+      "id": "alt-firefox",
+      "category": "browser",
+      "name": "Mozilla Firefox",
+      "url": "https://www.mozilla.org/firefox/new/",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-brave",
+      "category": "browser",
+      "name": "Brave",
+      "url": "https://brave.com/download/",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "brave/brave-browser"
+      }
+    },
+    {
+      "id": "alt-librewolf",
+      "category": "browser",
+      "name": "LibreWolf",
+      "url": "https://librewolf.net/installation/windows/",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-thunderbird",
+      "category": "mail",
+      "name": "Mozilla Thunderbird",
+      "url": "https://www.thunderbird.net/",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-vlc",
+      "category": "media_player",
+      "name": "VLC media player",
+      "url": "https://www.videolan.org/vlc/download-windows.html",
+      "license": "GPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-mpv",
+      "category": "media_player",
+      "name": "mpv",
+      "url": "https://mpv.io/installation/",
+      "license": "GPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "mpv-player/mpv"
+      }
+    },
+    {
+      "id": "alt-mpcbe",
+      "category": "media_player",
+      "name": "MPC-BE",
+      "url": "https://mpc-be.org/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-audacity",
+      "category": "audio_edit",
+      "name": "Audacity",
+      "url": "https://www.audacityteam.org/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "audacity/audacity"
+      }
+    },
+    {
+      "id": "alt-obs",
+      "category": "screen_record",
+      "name": "OBS Studio",
+      "url": "https://obsproject.com/download",
+      "license": "GPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "obsproject/obs-studio"
+      }
+    },
+    {
+      "id": "alt-sharex",
+      "category": "screen_record",
+      "name": "ShareX",
+      "url": "https://getsharex.com/downloads",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "ShareX/ShareX"
+      }
+    },
+    {
+      "id": "alt-notepadpp",
+      "category": "text_editor",
+      "name": "Notepad++",
+      "url": "https://notepad-plus-plus.org/downloads/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "notepad-plus-plus/notepad-plus-plus"
+      }
+    },
+    {
+      "id": "alt-vscode",
+      "category": "text_editor",
+      "name": "Visual Studio Code",
+      "url": "https://code.visualstudio.com/download",
+      "license": "MIT",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "microsoft/vscode"
+      }
+    },
+    {
+      "id": "alt-vscodium",
+      "category": "text_editor",
+      "name": "VSCodium",
+      "url": "https://vscodium.com/",
+      "license": "MIT",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "VSCodium/vscodium"
+      }
+    },
+    {
+      "id": "alt-keepassxc",
+      "category": "password_mgr",
+      "name": "KeePassXC",
+      "url": "https://keepassxc.org/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "keepassxreboot/keepassxc"
+      }
+    },
+    {
+      "id": "alt-bitwarden",
+      "category": "password_mgr",
+      "name": "Bitwarden",
+      "url": "https://bitwarden.com/download/",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "bitwarden/clients"
+      }
+    },
+    {
+      "id": "alt-keepass",
+      "category": "password_mgr",
+      "name": "KeePass",
+      "url": "https://keepass.info/download.html",
+      "license": "GPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable"
+    },
+    {
+      "id": "alt-freecad",
+      "category": "cad",
+      "name": "FreeCAD",
+      "url": "https://www.freecad.org/downloads.php",
+      "license": "LGPL-2.1",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "FreeCAD/FreeCAD"
+      }
+    },
+    {
+      "id": "alt-librecad",
+      "category": "cad",
+      "name": "LibreCAD",
+      "url": "https://librecad.org/",
+      "license": "GPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "source": {
+        "github": "LibreCAD/LibreCAD"
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-crystaldiskinfo",
+      "name": "CrystalDiskInfo",
+      "license": "MIT",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "DISK",
+        "RAID"
+      ],
+      "url": "https://crystalmark.info/en/software/crystaldiskinfo/",
+      "source": {
+        "github": "hiyohiyo/CrystalDiskInfo"
+      }
+    },
+    {
+      "id": "diag-windirstat",
+      "name": "WinDirStat",
+      "license": "GPL-3.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "DISK"
+      ],
+      "url": "https://windirstat.net/",
+      "source": {
+        "github": "windirstat/windirstat"
+      }
+    },
+    {
+      "id": "diag-librehardwaremonitor",
+      "name": "LibreHardwareMonitor",
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "TEMPERATURE",
+        "CPU",
+        "GPU_HARDWARE",
+        "MOTHERBOARD_HEALTH"
+      ],
+      "url": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
+      "source": {
+        "github": "LibreHardwareMonitor/LibreHardwareMonitor"
+      }
+    },
+    {
+      "id": "diag-autoruns",
+      "name": "Autoruns (Sysinternals)",
+      "license": "Microsoft Sysinternals",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "SCHEDULED_TASK_FAILED",
+        "SERVICE_STOPPED",
+        "CPU"
+      ],
+      "url": "https://learn.microsoft.com/sysinternals/downloads/autoruns"
+    },
+    {
+      "id": "diag-memdiag",
+      "name": "Windows Memory Diagnostic (ενσωματωμένο)",
+      "license": "Microsoft Windows",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "RAM"
+      ],
+      "builtin": "mdsched.exe"
+    },
+    {
+      "id": "diag-reliability",
+      "name": "Reliability Monitor (ενσωματωμένο)",
+      "license": "Microsoft Windows",
+      "commercialUseFree": true,
+      "maturity": "stable",
+      "triggers": [
+        "CRASH",
+        "THIRD_PARTY_SOFTWARE"
+      ],
+      "builtin": "perfmon.exe /rel"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "up-temurin-8",
+      "name": "Eclipse Temurin 8 (JRE)",
+      "kind": "msi",
+      "product": "java",
+      "fromMatch": [
+        "^Java(\\(TM\\))? ",
+        "^Java \\d",
+        "OpenJDK",
+        "Eclipse Temurin",
+        "AdoptOpenJDK",
+        "Zulu",
+        "Corretto"
+      ],
+      "fromMajor": 8,
+      "majorFromVersion": "^(?:1\\.)?(\\d+)",
+      "sameMajorOnly": true,
+      "url": "https://api.adoptium.net/v3/installer/latest/8/ga/windows/x64/jre/hotspot/normal/eclipse",
+      "allowedHosts": [
+        "api.adoptium.net",
+        "github.com",
+        "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "allowedPathPrefixes": {
+        "github.com": [
+          "/adoptium/"
+        ]
+      },
+      "signer": "Eclipse.org Foundation, Inc.",
+      "silentArgs": [
+        "/qn",
+        "/norestart",
+        "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJavaHome"
+      ],
+      "okExitCodes": [
+        0,
+        3010
+      ],
+      "sideBySide": true,
+      "runtime": true,
+      "license": "GPL-2.0 with Classpath Exception",
+      "commercialUseFree": true
+    },
+    {
+      "id": "up-temurin-11",
+      "name": "Eclipse Temurin 11 (JRE)",
+      "kind": "msi",
+      "product": "java",
+      "fromMatch": [
+        "^Java(\\(TM\\))? ",
+        "^Java \\d",
+        "OpenJDK",
+        "Eclipse Temurin",
+        "AdoptOpenJDK",
+        "Zulu",
+        "Corretto"
+      ],
+      "fromMajor": 11,
+      "majorFromVersion": "^(?:1\\.)?(\\d+)",
+      "sameMajorOnly": true,
+      "url": "https://api.adoptium.net/v3/installer/latest/11/ga/windows/x64/jre/hotspot/normal/eclipse",
+      "allowedHosts": [
+        "api.adoptium.net",
+        "github.com",
+        "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "allowedPathPrefixes": {
+        "github.com": [
+          "/adoptium/"
+        ]
+      },
+      "signer": "Eclipse.org Foundation, Inc.",
+      "silentArgs": [
+        "/qn",
+        "/norestart",
+        "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJavaHome"
+      ],
+      "okExitCodes": [
+        0,
+        3010
+      ],
+      "sideBySide": true,
+      "runtime": true,
+      "license": "GPL-2.0 with Classpath Exception",
+      "commercialUseFree": true
+    },
+    {
+      "id": "up-temurin-17",
+      "name": "Eclipse Temurin 17 (JRE)",
+      "kind": "msi",
+      "product": "java",
+      "fromMatch": [
+        "^Java(\\(TM\\))? ",
+        "^Java \\d",
+        "OpenJDK",
+        "Eclipse Temurin",
+        "AdoptOpenJDK",
+        "Zulu",
+        "Corretto"
+      ],
+      "fromMajor": 17,
+      "majorFromVersion": "^(?:1\\.)?(\\d+)",
+      "sameMajorOnly": true,
+      "url": "https://api.adoptium.net/v3/installer/latest/17/ga/windows/x64/jre/hotspot/normal/eclipse",
+      "allowedHosts": [
+        "api.adoptium.net",
+        "github.com",
+        "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "allowedPathPrefixes": {
+        "github.com": [
+          "/adoptium/"
+        ]
+      },
+      "signer": "Eclipse.org Foundation, Inc.",
+      "silentArgs": [
+        "/qn",
+        "/norestart",
+        "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJavaHome"
+      ],
+      "okExitCodes": [
+        0,
+        3010
+      ],
+      "sideBySide": true,
+      "runtime": true,
+      "license": "GPL-2.0 with Classpath Exception",
+      "commercialUseFree": true
+    },
+    {
+      "id": "up-temurin-21",
+      "name": "Eclipse Temurin 21 (JRE)",
+      "kind": "msi",
+      "product": "java",
+      "fromMatch": [
+        "^Java(\\(TM\\))? ",
+        "^Java \\d",
+        "OpenJDK",
+        "Eclipse Temurin",
+        "AdoptOpenJDK",
+        "Zulu",
+        "Corretto"
+      ],
+      "fromMajor": 21,
+      "majorFromVersion": "^(?:1\\.)?(\\d+)",
+      "sameMajorOnly": true,
+      "url": "https://api.adoptium.net/v3/installer/latest/21/ga/windows/x64/jre/hotspot/normal/eclipse",
+      "allowedHosts": [
+        "api.adoptium.net",
+        "github.com",
+        "objects.githubusercontent.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "allowedPathPrefixes": {
+        "github.com": [
+          "/adoptium/"
+        ]
+      },
+      "signer": "Eclipse.org Foundation, Inc.",
+      "silentArgs": [
+        "/qn",
+        "/norestart",
+        "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJavaHome"
+      ],
+      "okExitCodes": [
+        0,
+        3010
+      ],
+      "sideBySide": true,
+      "runtime": true,
+      "license": "GPL-2.0 with Classpath Exception",
+      "commercialUseFree": true
+    },
+    {
+      "id": "up-firefox",
+      "name": "Mozilla Firefox",
+      "kind": "exe",
+      "product": "firefox",
+      "fromMatch": [
+        "^Mozilla Firefox"
+      ],
+      "fromMajor": 0,
+      "majorFromVersion": "^(\\d+)",
+      "sameMajorOnly": false,
+      "url": "https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang={lang}",
+      "langMap": {
+        "el": "el",
+        "en": "en-US",
+        "de": "de",
+        "fr": "fr",
+        "it": "it",
+        "es": "es-ES",
+        "pt": "pt-PT",
+        "nl": "nl",
+        "pl": "pl",
+        "ru": "ru",
+        "tr": "tr",
+        "sv": "sv-SE",
+        "da": "da",
+        "fi": "fi",
+        "cs": "cs",
+        "ro": "ro",
+        "bg": "bg",
+        "hu": "hu"
+      },
+      "langDefault": "en-US",
+      "allowedHosts": [
+        "download.mozilla.org",
+        "download-installer.cdn.mozilla.net"
+      ],
+      "signer": "Mozilla Corporation",
+      "silentArgs": [
+        "/S"
+      ],
+      "okExitCodes": [
+        0
+      ],
+      "sideBySide": false,
+      "runtime": false,
+      "license": "MPL-2.0",
+      "commercialUseFree": true,
+      "verified": {
+        "signer": "Mozilla Corporation",
+        "sha256": "8368757b8e39ffe0441b2489e051d0d5ffc016c246ed5634495104da0e66fa83"
+      }
+    }
+  ],
+  "eol": [
+    {
+      "id": "eol-office",
+      "slug": "office",
+      "name": "Microsoft Office",
+      "match": [
+        "^Microsoft Office (Professional|Standard|Home|Small Business|Enterprise|Basic|Plus|Ultimate).*(20\\d\\d)",
+        "^Microsoft Office (20\\d\\d)"
+      ],
+      "cycleFrom": {
+        "source": "name",
+        "regex": "(20\\d\\d)"
+      },
+      "exposure": "high",
+      "runtime": false,
+      "critical": false,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "2024",
+          "eol": "2029-10-09"
+        },
+        {
+          "cycle": "2024-ltsc",
+          "eol": "2029-10-09"
+        },
+        {
+          "cycle": "2021",
+          "eol": "2026-10-13"
+        },
+        {
+          "cycle": "2019",
+          "eol": "2025-10-14"
+        },
+        {
+          "cycle": "2016",
+          "eol": "2025-10-14"
+        },
+        {
+          "cycle": "2013",
+          "eol": "2023-04-11"
+        },
+        {
+          "cycle": "2011-for-mac",
+          "eol": "2017-10-10"
+        },
+        {
+          "cycle": "2010",
+          "eol": "2020-10-13"
+        },
+        {
+          "cycle": "2008-for-mac",
+          "eol": "2013-04-09"
+        },
+        {
+          "cycle": "2007",
+          "eol": "2017-10-10"
+        },
+        {
+          "cycle": "2003",
+          "eol": "2014-04-08"
+        }
+      ]
+    },
+    {
+      "id": "eol-firefox",
+      "slug": "firefox",
+      "name": "Mozilla Firefox",
+      "match": [
+        "^Mozilla Firefox"
+      ],
+      "cycleFrom": {
+        "source": "version",
+        "regex": "^(\\d+)"
+      },
+      "exposure": "high",
+      "runtime": false,
+      "critical": false,
+      "graceDays": 45,
+      "cycles": [
+        {
+          "cycle": "161",
+          "eol": "2026-12-08"
+        },
+        {
+          "cycle": "160",
+          "eol": "2026-11-24"
+        },
+        {
+          "cycle": "159",
+          "eol": "2026-11-10"
+        },
+        {
+          "cycle": "158",
+          "eol": "2026-10-27"
+        },
+        {
+          "cycle": "157",
+          "eol": "2026-10-13"
+        },
+        {
+          "cycle": "156",
+          "eol": "2026-09-29"
+        },
+        {
+          "cycle": "155",
+          "eol": "2026-09-15"
+        },
+        {
+          "cycle": "154",
+          "eol": "2026-09-01"
+        },
+        {
+          "cycle": "153",
+          "eol": null
+        },
+        {
+          "cycle": "152",
+          "eol": "2026-07-21"
+        },
+        {
+          "cycle": "151",
+          "eol": "2026-06-16"
+        },
+        {
+          "cycle": "150",
+          "eol": "2026-05-18"
+        },
+        {
+          "cycle": "149",
+          "eol": "2026-04-21"
+        },
+        {
+          "cycle": "148",
+          "eol": "2026-03-24"
+        },
+        {
+          "cycle": "147",
+          "eol": "2026-02-24"
+        },
+        {
+          "cycle": "146",
+          "eol": "2026-01-13"
+        },
+        {
+          "cycle": "145",
+          "eol": "2025-12-09"
+        },
+        {
+          "cycle": "144",
+          "eol": "2025-11-11"
+        },
+        {
+          "cycle": "143",
+          "eol": "2025-10-14"
+        },
+        {
+          "cycle": "142",
+          "eol": "2025-09-16"
+        },
+        {
+          "cycle": "141",
+          "eol": "2025-08-19"
+        },
+        {
+          "cycle": "140",
+          "eol": "2026-09-29"
+        },
+        {
+          "cycle": "139",
+          "eol": "2025-06-24"
+        },
+        {
+          "cycle": "138",
+          "eol": "2025-05-27"
+        },
+        {
+          "cycle": "137",
+          "eol": "2025-04-29"
+        },
+        {
+          "cycle": "136",
+          "eol": "2025-04-01"
+        },
+        {
+          "cycle": "135",
+          "eol": "2025-03-04"
+        },
+        {
+          "cycle": "134",
+          "eol": "2025-02-04"
+        },
+        {
+          "cycle": "133",
+          "eol": "2025-01-07"
+        },
+        {
+          "cycle": "132",
+          "eol": "2024-11-26"
+        },
+        {
+          "cycle": "131",
+          "eol": "2024-10-29"
+        },
+        {
+          "cycle": "130",
+          "eol": "2024-10-01"
+        },
+        {
+          "cycle": "129",
+          "eol": "2024-09-03"
+        },
+        {
+          "cycle": "128",
+          "eol": "2025-09-16"
+        },
+        {
+          "cycle": "127",
+          "eol": "2024-07-09"
+        },
+        {
+          "cycle": "126",
+          "eol": "2024-06-11"
+        },
+        {
+          "cycle": "125",
+          "eol": "2024-05-14"
+        },
+        {
+          "cycle": "124",
+          "eol": "2024-04-16"
+        },
+        {
+          "cycle": "123",
+          "eol": "2024-03-19"
+        },
+        {
+          "cycle": "122",
+          "eol": "2024-02-20"
+        },
+        {
+          "cycle": "121",
+          "eol": "2024-01-23"
+        },
+        {
+          "cycle": "120",
+          "eol": "2023-12-19"
+        },
+        {
+          "cycle": "119",
+          "eol": "2023-11-21"
+        },
+        {
+          "cycle": "118",
+          "eol": "2023-10-24"
+        },
+        {
+          "cycle": "117",
+          "eol": "2023-09-26"
+        },
+        {
+          "cycle": "116",
+          "eol": "2023-08-29"
+        },
+        {
+          "cycle": "115",
+          "eol": "2027-03-31"
+        },
+        {
+          "cycle": "114",
+          "eol": "2023-07-04"
+        },
+        {
+          "cycle": "113",
+          "eol": "2023-06-06"
+        },
+        {
+          "cycle": "112",
+          "eol": "2023-05-09"
+        },
+        {
+          "cycle": "111",
+          "eol": "2023-04-11"
+        },
+        {
+          "cycle": "110",
+          "eol": "2023-03-14"
+        },
+        {
+          "cycle": "109",
+          "eol": "2023-02-14"
+        },
+        {
+          "cycle": "108",
+          "eol": "2023-01-17"
+        },
+        {
+          "cycle": "107",
+          "eol": "2022-12-13"
+        },
+        {
+          "cycle": "106",
+          "eol": "2022-11-15"
+        },
+        {
+          "cycle": "105",
+          "eol": "2022-10-18"
+        },
+        {
+          "cycle": "104",
+          "eol": "2022-09-20"
+        },
+        {
+          "cycle": "103",
+          "eol": "2022-08-23"
+        },
+        {
+          "cycle": "102",
+          "eol": "2023-09-26"
+        },
+        {
+          "cycle": "91",
+          "eol": "2022-09-20"
+        },
+        {
+          "cycle": "78",
+          "eol": "2021-11-02"
+        },
+        {
+          "cycle": "68",
+          "eol": "2020-09-22"
+        },
+        {
+          "cycle": "60",
+          "eol": "2019-10-22"
+        },
+        {
+          "cycle": "52",
+          "eol": "2018-09-05"
+        },
+        {
+          "cycle": "45",
+          "eol": "2017-06-13"
+        },
+        {
+          "cycle": "38",
+          "eol": "2016-06-07"
+        },
+        {
+          "cycle": "31",
+          "eol": "2015-08-11"
+        },
+        {
+          "cycle": "24",
+          "eol": "2014-10-14"
+        },
+        {
+          "cycle": "17",
+          "eol": "2013-12-10"
+        },
+        {
+          "cycle": "10",
+          "eol": "2013-02-19"
+        }
+      ],
+      "upgrade": "up-firefox"
+    },
+    {
+      "id": "eol-libreoffice",
+      "slug": "libreoffice",
+      "name": "LibreOffice",
+      "match": [
+        "^LibreOffice"
+      ],
+      "cycleFrom": {
+        "source": "version",
+        "regex": "^(\\d+\\.\\d+)"
+      },
+      "exposure": "high",
+      "runtime": false,
+      "critical": false,
+      "graceDays": 45,
+      "cycles": [
+        {
+          "cycle": "26.8",
+          "eol": "2027-06-13"
+        },
+        {
+          "cycle": "26.2",
+          "eol": "2026-11-30"
+        },
+        {
+          "cycle": "25.8",
+          "eol": "2026-06-12"
+        },
+        {
+          "cycle": "25.2",
+          "eol": "2025-11-30"
+        },
+        {
+          "cycle": "24.8",
+          "eol": "2025-06-12"
+        },
+        {
+          "cycle": "24.2",
+          "eol": "2024-11-30"
+        },
+        {
+          "cycle": "7.6",
+          "eol": "2024-06-12"
+        },
+        {
+          "cycle": "7.5",
+          "eol": "2023-12-07"
+        },
+        {
+          "cycle": "7.4",
+          "eol": "2023-06-12"
+        },
+        {
+          "cycle": "7.3",
+          "eol": "2022-11-30"
+        },
+        {
+          "cycle": "7.2",
+          "eol": "2022-06-12"
+        },
+        {
+          "cycle": "7.1",
+          "eol": "2021-11-30"
+        },
+        {
+          "cycle": "7.0",
+          "eol": "2021-05-31"
+        },
+        {
+          "cycle": "6.4",
+          "eol": "2020-11-30"
+        },
+        {
+          "cycle": "6.3",
+          "eol": "2020-05-29"
+        },
+        {
+          "cycle": "6.2",
+          "eol": "2019-11-30"
+        },
+        {
+          "cycle": "6.1",
+          "eol": "2019-05-29"
+        },
+        {
+          "cycle": "6.0",
+          "eol": "2018-11-26"
+        },
+        {
+          "cycle": "5.4",
+          "eol": "2018-06-11"
+        },
+        {
+          "cycle": "5.3",
+          "eol": "2017-11-26"
+        },
+        {
+          "cycle": "5.2",
+          "eol": "2017-06-04"
+        },
+        {
+          "cycle": "5.1",
+          "eol": "2016-11-27"
+        },
+        {
+          "cycle": "5.0",
+          "eol": "2016-05-29"
+        },
+        {
+          "cycle": "4.4",
+          "eol": "2015-12-31"
+        },
+        {
+          "cycle": "4.3",
+          "eol": "2015-05-27"
+        },
+        {
+          "cycle": "4.2",
+          "eol": "2015-01-06"
+        },
+        {
+          "cycle": "4.1",
+          "eol": "2014-05-28"
+        },
+        {
+          "cycle": "4.0",
+          "eol": "2013-11-21"
+        },
+        {
+          "cycle": "3.6",
+          "eol": "2013-08-15"
+        },
+        {
+          "cycle": "3.5",
+          "eol": "2012-11-08"
+        },
+        {
+          "cycle": "3.4",
+          "eol": "2012-04-19"
+        },
+        {
+          "cycle": "3.3",
+          "eol": "2011-09-17"
+        }
+      ]
+    },
+    {
+      "id": "eol-dotnet",
+      "slug": "dotnet",
+      "name": ".NET (runtime)",
+      "match": [
+        "^Microsoft (\\.NET|Windows Desktop|ASP\\.NET Core) .*Runtime",
+        "^Microsoft \\.NET Runtime"
+      ],
+      "cycleFrom": {
+        "source": "version",
+        "regex": "^(\\d+\\.\\d+)"
+      },
+      "exposure": "low",
+      "runtime": true,
+      "critical": false,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "11",
+          "eol": "2028-11-14"
+        },
+        {
+          "cycle": "10",
+          "eol": "2028-11-14"
+        },
+        {
+          "cycle": "9",
+          "eol": "2026-11-10"
+        },
+        {
+          "cycle": "8",
+          "eol": "2026-11-10"
+        },
+        {
+          "cycle": "7",
+          "eol": "2024-05-14"
+        },
+        {
+          "cycle": "6",
+          "eol": "2024-11-12"
+        },
+        {
+          "cycle": "5",
+          "eol": "2022-05-10"
+        },
+        {
+          "cycle": "3.1",
+          "eol": "2022-12-13"
+        },
+        {
+          "cycle": "3.0",
+          "eol": "2020-03-03"
+        },
+        {
+          "cycle": "2.2",
+          "eol": "2019-12-23"
+        },
+        {
+          "cycle": "2.1",
+          "eol": "2021-08-21"
+        },
+        {
+          "cycle": "2.0",
+          "eol": "2018-10-01"
+        },
+        {
+          "cycle": "1.1",
+          "eol": "2019-06-27"
+        },
+        {
+          "cycle": "1.0",
+          "eol": "2019-06-27"
+        }
+      ]
+    },
+    {
+      "id": "eol-oracle-jdk",
+      "slug": "oracle-jdk",
+      "name": "Java (Oracle)",
+      "match": [
+        "^Java(\\(TM\\))? (SE )?(Development Kit|Runtime Environment|\\d)",
+        "^Java \\d+ Update"
+      ],
+      "cycleFrom": {
+        "source": "version",
+        "regex": "^(?:1\\.)?(\\d+)"
+      },
+      "exposure": "high",
+      "runtime": true,
+      "critical": false,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "27",
+          "eol": "2027-03-31"
+        },
+        {
+          "cycle": "26",
+          "eol": "2026-09-18"
+        },
+        {
+          "cycle": "25",
+          "eol": "2030-09-30"
+        },
+        {
+          "cycle": "24",
+          "eol": "2025-09-16"
+        },
+        {
+          "cycle": "23",
+          "eol": "2025-03-18"
+        },
+        {
+          "cycle": "22",
+          "eol": "2024-09-17"
+        },
+        {
+          "cycle": "21",
+          "eol": "2028-09-30"
+        },
+        {
+          "cycle": "20",
+          "eol": "2023-09-19"
+        },
+        {
+          "cycle": "19",
+          "eol": "2023-03-21"
+        },
+        {
+          "cycle": "18",
+          "eol": "2022-09-20"
+        },
+        {
+          "cycle": "17",
+          "eol": "2026-09-30"
+        },
+        {
+          "cycle": "16",
+          "eol": "2021-09-14"
+        },
+        {
+          "cycle": "15",
+          "eol": "2021-03-16"
+        },
+        {
+          "cycle": "14",
+          "eol": "2020-09-16"
+        },
+        {
+          "cycle": "13",
+          "eol": "2020-03-17"
+        },
+        {
+          "cycle": "12",
+          "eol": "2019-09-17"
+        },
+        {
+          "cycle": "11",
+          "eol": "2023-09-30"
+        },
+        {
+          "cycle": "10",
+          "eol": "2018-09-25"
+        },
+        {
+          "cycle": "9",
+          "eol": "2018-03-20"
+        },
+        {
+          "cycle": "8",
+          "eol": "2022-03-31"
+        },
+        {
+          "cycle": "7",
+          "eol": "2019-07-31"
+        },
+        {
+          "cycle": "6",
+          "eol": "2018-12-31"
+        },
+        {
+          "cycle": "5",
+          "eol": "2009-10-30"
+        },
+        {
+          "cycle": "1.4",
+          "eol": "2008-10-30"
+        },
+        {
+          "cycle": "1.3",
+          "eol": "2006-03-31"
+        },
+        {
+          "cycle": "1.2",
+          "eol": "2003-11-30"
+        },
+        {
+          "cycle": "1.1",
+          "eol": "2002-10-09"
+        },
+        {
+          "cycle": "1.0",
+          "eol": "1996-05-07"
+        }
+      ]
+    },
+    {
+      "id": "eol-temurin",
+      "slug": "eclipse-temurin",
+      "name": "Eclipse Temurin",
+      "match": [
+        "^Eclipse Temurin"
+      ],
+      "cycleFrom": {
+        "source": "version",
+        "regex": "^(\\d+)"
+      },
+      "exposure": "high",
+      "runtime": true,
+      "critical": false,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "27",
+          "eol": "2027-03-23"
+        },
+        {
+          "cycle": "26",
+          "eol": "2026-09-22"
+        },
+        {
+          "cycle": "25",
+          "eol": "2031-09-30"
+        },
+        {
+          "cycle": "24",
+          "eol": "2025-09-22"
+        },
+        {
+          "cycle": "23",
+          "eol": "2025-03-18"
+        },
+        {
+          "cycle": "22",
+          "eol": "2024-09-17"
+        },
+        {
+          "cycle": "21",
+          "eol": "2029-12-31"
+        },
+        {
+          "cycle": "20",
+          "eol": "2023-09-19"
+        },
+        {
+          "cycle": "19",
+          "eol": "2023-03-31"
+        },
+        {
+          "cycle": "18",
+          "eol": "2022-09-30"
+        },
+        {
+          "cycle": "17",
+          "eol": "2027-10-31"
+        },
+        {
+          "cycle": "11",
+          "eol": "2027-10-31"
+        },
+        {
+          "cycle": "16",
+          "eol": "2021-09-30"
+        },
+        {
+          "cycle": "8",
+          "eol": "2030-12-31"
+        }
+      ]
+    },
+    {
+      "id": "eol-mssql",
+      "slug": "mssqlserver",
+      "name": "Microsoft SQL Server",
+      "match": [
+        "^(Microsoft )?SQL Server (20\\d\\d)"
+      ],
+      "cycleFrom": {
+        "source": "name",
+        "regex": "SQL Server (20\\d\\d)"
+      },
+      "exposure": "high",
+      "runtime": false,
+      "critical": true,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "17.0",
+          "eol": "2036-01-06"
+        },
+        {
+          "cycle": "16.0",
+          "eol": "2033-01-11"
+        },
+        {
+          "cycle": "13.0-sp3-acp",
+          "eol": "2026-07-14"
+        },
+        {
+          "cycle": "13.0-sp3",
+          "eol": "2026-07-14"
+        },
+        {
+          "cycle": "15.0",
+          "eol": "2030-01-08"
+        },
+        {
+          "cycle": "12.0-sp3",
+          "eol": "2024-07-09"
+        },
+        {
+          "cycle": "13.0-sp2",
+          "eol": "2022-10-11"
+        },
+        {
+          "cycle": "11.0-sp4",
+          "eol": "2022-07-12"
+        },
+        {
+          "cycle": "14.0",
+          "eol": "2027-10-12"
+        },
+        {
+          "cycle": "13.0-sp1",
+          "eol": "2019-07-09"
+        },
+        {
+          "cycle": "12.0-sp2",
+          "eol": "2020-01-14"
+        },
+        {
+          "cycle": "13.0",
+          "eol": "2018-01-09"
+        },
+        {
+          "cycle": "11.0-sp3",
+          "eol": "2018-10-09"
+        },
+        {
+          "cycle": "12.0-sp1",
+          "eol": "2017-10-10"
+        },
+        {
+          "cycle": "10.50-sp3",
+          "eol": "2019-07-09"
+        },
+        {
+          "cycle": "10.0-sp4",
+          "eol": "2019-07-09"
+        },
+        {
+          "cycle": "11.0-sp2",
+          "eol": "2017-01-10"
+        },
+        {
+          "cycle": "12.0",
+          "eol": "2016-07-12"
+        },
+        {
+          "cycle": "11.0-sp1",
+          "eol": "2015-07-14"
+        },
+        {
+          "cycle": "10.50-sp2",
+          "eol": "2015-10-13"
+        },
+        {
+          "cycle": "11.0",
+          "eol": "2014-01-14"
+        },
+        {
+          "cycle": "10.00-sp3",
+          "eol": "2015-10-13"
+        },
+        {
+          "cycle": "10.50-sp1",
+          "eol": "2013-10-08"
+        },
+        {
+          "cycle": "9.0-sp4",
+          "eol": "2016-04-12"
+        },
+        {
+          "cycle": "10.00-sp2",
+          "eol": "2012-10-09"
+        },
+        {
+          "cycle": "10.50-r2",
+          "eol": "2012-07-10"
+        },
+        {
+          "cycle": "10.00-sp1",
+          "eol": "2011-10-11"
+        },
+        {
+          "cycle": "9.00-sp3",
+          "eol": "2012-01-10"
+        },
+        {
+          "cycle": "10.00",
+          "eol": "2010-04-13"
+        },
+        {
+          "cycle": "9.00-sp2",
+          "eol": "2010-01-12"
+        },
+        {
+          "cycle": "9.0-sp1",
+          "eol": "2008-04-08"
+        },
+        {
+          "cycle": "9.0",
+          "eol": "2007-07-10"
+        },
+        {
+          "cycle": "8.0-sp4",
+          "eol": "2013-04-09"
+        },
+        {
+          "cycle": "7.0-sp4",
+          "eol": "2011-01-11"
+        },
+        {
+          "cycle": "6.50-sp5a",
+          "eol": "2002-01-01"
+        },
+        {
+          "cycle": "6.0-sp3",
+          "eol": "1999-03-31"
+        }
+      ]
+    },
+    {
+      "id": "eol-python",
+      "slug": "python",
+      "name": "Python",
+      "match": [
+        "^Python \\d+\\.\\d+"
+      ],
+      "cycleFrom": {
+        "source": "name",
+        "regex": "Python (\\d+\\.\\d+)"
+      },
+      "exposure": "low",
+      "runtime": true,
+      "critical": false,
+      "graceDays": 0,
+      "cycles": [
+        {
+          "cycle": "3.15",
+          "eol": "2031-10-31"
+        },
+        {
+          "cycle": "3.14",
+          "eol": "2030-10-31"
+        },
+        {
+          "cycle": "3.13",
+          "eol": "2029-10-31"
+        },
+        {
+          "cycle": "3.12",
+          "eol": "2028-10-31"
+        },
+        {
+          "cycle": "3.11",
+          "eol": "2027-10-31"
+        },
+        {
+          "cycle": "3.10",
+          "eol": "2026-10-01"
+        },
+        {
+          "cycle": "3.9",
+          "eol": "2025-10-31"
+        },
+        {
+          "cycle": "3.8",
+          "eol": "2024-10-07"
+        },
+        {
+          "cycle": "3.7",
+          "eol": "2023-06-27"
+        },
+        {
+          "cycle": "3.6",
+          "eol": "2021-12-23"
+        },
+        {
+          "cycle": "3.5",
+          "eol": "2020-09-30"
+        },
+        {
+          "cycle": "3.4",
+          "eol": "2019-03-18"
+        },
+        {
+          "cycle": "3.3",
+          "eol": "2017-09-29"
+        },
+        {
+          "cycle": "3.2",
+          "eol": "2016-02-20"
+        },
+        {
+          "cycle": "2.7",
+          "eol": "2020-01-01"
+        },
+        {
+          "cycle": "3.1",
+          "eol": "2012-04-09"
+        },
+        {
+          "cycle": "3.0",
+          "eol": "2009-06-27"
+        },
+        {
+          "cycle": "2.6",
+          "eol": "2013-10-29"
+        },
+        {
+          "cycle": "2.5",
+          "eol": "2011-05-26"
+        },
+        {
+          "cycle": "2.4",
+          "eol": "2008-12-19"
+        },
+        {
+          "cycle": "2.3",
+          "eol": "2008-03-11"
+        },
+        {
+          "cycle": "2.2",
+          "eol": "2003-05-30"
+        },
+        {
+          "cycle": "2.1",
+          "eol": "2002-04-09"
+        }
+      ]
+    }
+  ]
+}
