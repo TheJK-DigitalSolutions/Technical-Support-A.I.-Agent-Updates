@@ -44,7 +44,7 @@
     "alt-7zip#url": 0,
     "alt-peazip#url": 0,
     "alt-nanazip#url": 0,
-    "alt-firefox#url": 1,
+    "alt-firefox#url": 0,
     "alt-brave#url": 0,
     "alt-librewolf#url": 0,
     "alt-thunderbird#url": 0,
@@ -66,10 +66,10 @@
     "diag-windirstat#url": 0,
     "diag-librehardwaremonitor#url": 0,
     "diag-autoruns#url": 0,
-    "up-temurin-8#inst": 1,
-    "up-temurin-11#inst": 1,
-    "up-temurin-17#inst": 1,
-    "up-temurin-21#inst": 1,
+    "up-temurin-8#inst": 0,
+    "up-temurin-11#inst": 0,
+    "up-temurin-17#inst": 0,
+    "up-temurin-21#inst": 0,
     "up-firefox#inst": 0
   },
   "suspended": {
@@ -137,7 +137,12 @@
     "diag-windirstat#url": false,
     "diag-librehardwaremonitor#url": false,
     "diag-autoruns#url": false,
-    "up-firefox#inst": false
+    "up-firefox#inst": false,
+    "alt-firefox#url": false,
+    "up-temurin-8#inst": false,
+    "up-temurin-11#inst": false,
+    "up-temurin-17#inst": false,
+    "up-temurin-21#inst": false
   },
   "reasons": {
     "eol-office": "",
@@ -183,7 +188,7 @@
     "alt-7zip#url": "",
     "alt-peazip#url": "",
     "alt-nanazip#url": "",
-    "alt-firefox#url": "url: ανακατεύθυνση σε άλλο domain (www.firefox.com)",
+    "alt-firefox#url": "",
     "alt-brave#url": "",
     "alt-librewolf#url": "",
     "alt-thunderbird#url": "",
@@ -205,10 +210,10 @@
     "diag-windirstat#url": "",
     "diag-librehardwaremonitor#url": "",
     "diag-autoruns#url": "",
-    "up-temurin-8#inst": "ο εκδότης (Eclipse Foundation) δεν είναι ο καρφωμένος (Eclipse.org Foundation, Inc.)",
-    "up-temurin-11#inst": "ο εκδότης (Eclipse Foundation) δεν είναι ο καρφωμένος (Eclipse.org Foundation, Inc.)",
-    "up-temurin-17#inst": "ο εκδότης (Eclipse Foundation) δεν είναι ο καρφωμένος (Eclipse.org Foundation, Inc.)",
-    "up-temurin-21#inst": "ο εκδότης (Eclipse Foundation) δεν είναι ο καρφωμένος (Eclipse.org Foundation, Inc.)",
+    "up-temurin-8#inst": "",
+    "up-temurin-11#inst": "",
+    "up-temurin-17#inst": "",
+    "up-temurin-21#inst": "",
     "up-firefox#inst": ""
   }
 }

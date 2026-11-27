@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "note": "Κατάλογος λογισμικού (Κανόνας 17/21). Ένα ΚΟΙΝΟ αρχείο για ιδιώτες και επιχειρήσεις: μόνο εγγραφές δωρεάν και για επιχειρήσεις. Η ΛΙΣΤΑ εγγραφών είναι seed που εγκρίνεται σε κάθε έκδοση· τα στοιχεία (URL, άδεια, ενεργό project, λήξη υποστήριξης, υπογραφή installers) ανανεώνονται αυτόματα από το workflow catalogs.yml. Εγγραφή με suspended:true παραλείπεται από τον agent.",
   "categories": [
     {
@@ -335,7 +335,7 @@
       "id": "alt-firefox",
       "category": "browser",
       "name": "Mozilla Firefox",
-      "url": "https://www.mozilla.org/firefox/new/",
+      "url": "https://www.firefox.com/",
       "license": "MPL-2.0",
       "commercialUseFree": true,
       "maturity": "stable"
@@ -644,7 +644,7 @@
           "/adoptium/"
         ]
       },
-      "signer": "Eclipse.org Foundation, Inc.",
+      "signer": "Eclipse Foundation",
       "silentArgs": [
         "/qn",
         "/norestart",
@@ -657,7 +657,11 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "verified": {
+        "signer": "Eclipse Foundation",
+        "sha256": "c60f51ed33d483cebae883d22cba42fb956c79a42150b22fe42341967973c129"
+      }
     },
     {
       "id": "up-temurin-11",
@@ -688,7 +692,7 @@
           "/adoptium/"
         ]
       },
-      "signer": "Eclipse.org Foundation, Inc.",
+      "signer": "Eclipse Foundation",
       "silentArgs": [
         "/qn",
         "/norestart",
@@ -701,7 +705,11 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "verified": {
+        "signer": "Eclipse Foundation",
+        "sha256": "09542d212951bfcd1fa66978fba3c9c3a27fac01501b8887ddea89f56051a702"
+      }
     },
     {
       "id": "up-temurin-17",
@@ -732,7 +740,7 @@
           "/adoptium/"
         ]
       },
-      "signer": "Eclipse.org Foundation, Inc.",
+      "signer": "Eclipse Foundation",
       "silentArgs": [
         "/qn",
         "/norestart",
@@ -745,7 +753,11 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "verified": {
+        "signer": "Eclipse Foundation",
+        "sha256": "89a157f3e24fc4ef1e0783460a54d24669e2d779c6dc0f3b12b6ea1c7662dc9c"
+      }
     },
     {
       "id": "up-temurin-21",
@@ -776,7 +788,7 @@
           "/adoptium/"
         ]
       },
-      "signer": "Eclipse.org Foundation, Inc.",
+      "signer": "Eclipse Foundation",
       "silentArgs": [
         "/qn",
         "/norestart",
@@ -789,7 +801,11 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "verified": {
+        "signer": "Eclipse Foundation",
+        "sha256": "edd761b200d7896fc40382bc14c3e077c3d4d3011682157d4db6f487e2bce081"
+      }
     },
     {
       "id": "up-firefox",
