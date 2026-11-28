@@ -657,7 +657,9 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "suspended": true,
+      "suspendedReason": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
     },
     {
       "id": "up-temurin-11",
@@ -701,7 +703,9 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "suspended": true,
+      "suspendedReason": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
     },
     {
       "id": "up-temurin-17",
@@ -745,7 +749,9 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "suspended": true,
+      "suspendedReason": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
     },
     {
       "id": "up-temurin-21",
@@ -789,7 +795,9 @@
       "sideBySide": true,
       "runtime": true,
       "license": "GPL-2.0 with Classpath Exception",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "suspended": true,
+      "suspendedReason": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
     },
     {
       "id": "up-firefox",
@@ -839,7 +847,9 @@
       "sideBySide": false,
       "runtime": false,
       "license": "MPL-2.0",
-      "commercialUseFree": true
+      "commercialUseFree": true,
+      "suspended": true,
+      "suspendedReason": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
     }
   ],
   "eol": [

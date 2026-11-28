@@ -66,11 +66,11 @@
     "diag-windirstat#url": 0,
     "diag-librehardwaremonitor#url": 0,
     "diag-autoruns#url": 0,
-    "up-temurin-8#inst": 1,
-    "up-temurin-11#inst": 1,
-    "up-temurin-17#inst": 1,
-    "up-temurin-21#inst": 1,
-    "up-firefox#inst": 1
+    "up-temurin-8#inst": 2,
+    "up-temurin-11#inst": 2,
+    "up-temurin-17#inst": 2,
+    "up-temurin-21#inst": 2,
+    "up-firefox#inst": 2
   },
   "suspended": {
     "eol-office": false,
@@ -137,12 +137,12 @@
     "diag-windirstat#url": false,
     "diag-librehardwaremonitor#url": false,
     "diag-autoruns#url": false,
-    "up-firefox#inst": false,
+    "up-firefox#inst": true,
     "alt-firefox#url": false,
-    "up-temurin-8#inst": false,
-    "up-temurin-11#inst": false,
-    "up-temurin-17#inst": false,
-    "up-temurin-21#inst": false
+    "up-temurin-8#inst": true,
+    "up-temurin-11#inst": true,
+    "up-temurin-17#inst": true,
+    "up-temurin-21#inst": true
   },
   "reasons": {
     "eol-office": "",
