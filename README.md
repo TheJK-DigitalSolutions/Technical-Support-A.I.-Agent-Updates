@@ -1,9 +1,4 @@
-# Technical Support A.I. Agent — Updates (δημόσιο)
+﻿# Technical Support A.I. Agent — Updates
 
-Κανάλι ενημέρωσης ΑΡΧΕΙΩΝ ΔΕΔΟΜΕΝΩΝ (όχι κώδικα) για το Technical Support A.I. Agent.
-Κάθε αρχείο καταγράφεται στο `manifest.json` (SHA256 + μέγεθος) και το manifest υπογράφεται (`manifest.json.sig`). Ο agent αγνοεί οτιδήποτε δεν επαληθεύεται.
-
-- `AI_Models.json`, `OS_Lifecycle.json`: λίστες δεδομένων.
-- `knowledge.json`: συλλογική τεχνική γνώση (ανώνυμα, δομημένα στοιχεία από εγκαταστάσεις που το επέτρεψαν).
-
-Το αποθετήριο ενημερώνεται αυτόματα. Μην κάνετε χειροκίνητες αλλαγές.
+Αρχεία δεδομένων του Technical Support A.I. Agent.
+Ενημερώνεται αυτόματα· μην κάνετε χειροκίνητες αλλαγές.
