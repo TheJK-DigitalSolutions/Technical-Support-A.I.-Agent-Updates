@@ -1,5 +1,60 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-11-27",
-  "entries": []
+  "updated": "2026-11-28",
+  "entries": [
+    {
+      "area": "THIRD_PARTY_SOFTWARE",
+      "subarea": "BROWSER",
+      "symptom": "end_of_life",
+      "reports": 1,
+      "installs": 1,
+      "fixed": 0,
+      "actions": [
+        {
+          "name": "cmd:get-childitem",
+          "reports": 1,
+          "installs": 1,
+          "fixed": 0
+        },
+        {
+          "name": "cmd:get-item",
+          "reports": 1,
+          "installs": 1,
+          "fixed": 0
+        },
+        {
+          "name": "cmd:get-itemproperty",
+          "reports": 1,
+          "installs": 1,
+          "fixed": 0
+        },
+        {
+          "name": "cmd:get-process",
+          "reports": 1,
+          "installs": 1,
+          "fixed": 0
+        },
+        {
+          "name": "pb:upgrade-app",
+          "reports": 1,
+          "installs": 1,
+          "fixed": 0
+        }
+      ],
+      "dist": {
+        "machine_hardware": {
+          "physical": 1
+        },
+        "machine_role": {
+          "server": 1
+        },
+        "severity": {
+          "unknown": 1
+        },
+        "windows_build": {
+          "17763": 1
+        }
+      }
+    }
+  ]
 }
