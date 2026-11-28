@@ -66,11 +66,11 @@
     "diag-windirstat#url": 0,
     "diag-librehardwaremonitor#url": 0,
     "diag-autoruns#url": 0,
-    "up-temurin-8#inst": 0,
-    "up-temurin-11#inst": 0,
-    "up-temurin-17#inst": 0,
-    "up-temurin-21#inst": 0,
-    "up-firefox#inst": 0
+    "up-temurin-8#inst": 1,
+    "up-temurin-11#inst": 1,
+    "up-temurin-17#inst": 1,
+    "up-temurin-21#inst": 1,
+    "up-firefox#inst": 1
   },
   "suspended": {
     "eol-office": false,
@@ -210,10 +210,10 @@
     "diag-windirstat#url": "",
     "diag-librehardwaremonitor#url": "",
     "diag-autoruns#url": "",
-    "up-temurin-8#inst": "",
-    "up-temurin-11#inst": "",
-    "up-temurin-17#inst": "",
-    "up-temurin-21#inst": "",
-    "up-firefox#inst": ""
+    "up-temurin-8#inst": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "up-temurin-11#inst": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "up-temurin-17#inst": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "up-temurin-21#inst": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "up-firefox#inst": "σφάλμα λήψης: The term 'Show-AgentProgress' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
   }
 }
